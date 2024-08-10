@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naukari</title>
+    <link rel="icon" type="image/x-icon" href="Fire.png">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+
+    <button type="button" onclick="showDate()">Click here</button>
+
+    <h1 id="h1Id">Job Registration Form</h1>
+
+    <form id="formId" class="formClass" name="newForm" onsubmit="return formValidation()">
+
+        <div class="inputClass" id="name1">
+            <lable for="name2">Name</lable>
+            <span style="color: red;">*</span>:
+            <input type="text" name="name2" id="nameId2" required>
+            <span class="errorClass"></span>
+        </div>
+
+        <div class="inputClass" id="email1">
+            Email<span style="color: red;">*</span>:<input type="email" name="email2" placeholder="shan@gmail.com"
+                required><span class="errorClass"></span></div>
+
+        <div class="inputClass" id="pass1">
+            Password<span style="color: red;">*</span>:
+
+            <input type="password" name="pass11" minlength="5" maxlength="5" required>
+            <span class="errorClass"></span>
+        </div>
+
+        <div class="inputClass" id="pass2"> Confirm Password<span style="color: red;">*</span>:
+            <input type="password" name="pass22" minlength="5" maxlength="5" required><span class="errorClass"></span>
+        </div>
+
+        <div class="inputClass">
+            <lable for="num22">Phone :</lable>
+            <span style="color: red;">*</span>
+            <input type="number" id="num22" name="num2" required>
+            <span id="num1" class="errorClass"></span>
+        </div>
+        <div class="inputClass">Please select gender :
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+        </div>
+
+        <div class="inputClass">Please select shift:
+            <select>
+                <option value="fullTime">Full Time</option>
+                <option value="partTime">Part Time</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button class="btnClass" type="submit" value="Submit">Submit</button>
+            <button class="btnClass" type="reset" value="Clear" onclick="clearError()">Clear</button>
+        </div>
+    </form>
+</body>
+
+</html>
