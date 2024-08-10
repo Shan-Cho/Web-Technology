@@ -1,0 +1,26 @@
+.formClass {
+    text-align: center;
+    width: 360px;
+}
+
+
+.inputClass {
+    border: 1px solid rgb(245, 213, 255);
+    color: rgb(46, 0, 53);
+    padding: 10px;
+    margin: 5px;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnClass {
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: purple;
+}
+
+.errorClass {
+    color: red;
+    font-size: small;
+}
